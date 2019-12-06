@@ -36,12 +36,11 @@ def duplicate_count(text):
     while i < len(text):
         j = 0
         while j < len(text):
-            if j != i and text[i].lower() not in charCountList and text[i].lower() == text[j].lower():
+            if j != i and text[j].lower() not in charCountList and text[i].lower() == text[j].lower():
                 charCountList.append(text[i].lower())
             j += 1
         i += 1
-    repetitionCounter = len(charCountList)
-    return repetitionCounter
+    return len(charCountList)
 #
 #
 if __name__ == "__main__":
