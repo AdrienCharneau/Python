@@ -110,8 +110,6 @@ def createInitialList(tableWidth):
         numberList.append(i)
         i += 1
     return numberList
-
-
 #
 #
 if __name__ == "__main__":
