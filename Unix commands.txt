@@ -1,0 +1,33 @@
+INSTALLATION_________________________________________________________
+
+sudo apt update
+sudo apt install python3-minimal
+
+OR
+
+sudo add-apt-repository ppa:jonathonf/python-3.8
+sudo apt update
+sudo apt-get install python3.8
+
+
+
+
+COMMANDES UNIX_______________________________________________________
+
+- python -V :
+Affiche la version de Python installée. Fonctionne aussi avec "python2 -V", "python3 -V" ou encore "python3.8 -V"
+
+
+- python :
+Démarre l'interpréteur Python. Fonctionne aussi avec "python2", "python3" ou encore "python3.8"
+
+
+
+
+COMMANDES PYTHON_____________________________________________________
+
+- ctrl + D :
+Quitte l'interpréteur Python
+
+- ctrl + L :
+Nettoie la console (comme "clear" dans UNIX)
