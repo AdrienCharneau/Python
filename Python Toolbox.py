@@ -1,3 +1,5 @@
+#
+#
 #__VARIABLES_________________________________________________________
 #	
 #
@@ -72,18 +74,41 @@ variableLigne = 1 + 4 - 3 * 19 + 33 - 45 * 2 + (8 - 3) \
 #
 #
 #
+#__INSTRUCTIONS CONDITIONNELLES______________________________________
+#
+#
+#
+#
 #__FONCTIONS_________________________________________________________
 #
 #
 #	- Print
 #
-print("ceci est un print()")
-#	Affiche "ceci est un print()"
+print("Hello World !")
+#	Affiche "Hello World !"
 #
 #
 a = 3
 print(a)
 #	Affiche "3"
+#
+#
+from platform import python_version
+print("Python " + python_version())
+#	Affiche la version courante de Python
+#
+#
+import datetime
+print("Current date and time : ")
+print(datetime.datetime.now(), "\n")
+#	Affiche la date et l'heure courante
+#
+#
+import datetime
+now = datetime.datetime.now()
+print("Current date and time : ")
+print(now.strftime("%Y-%m-%d %H:%M:%S"), "\n")
+#	Affiche la date et l'heure courante (formaté)
 #
 #
 #
@@ -101,38 +126,3 @@ print(type(3.4))
 #
 print(type("string"))
 #	Affiche "<class 'str'>"
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#	- Display curent Python version on the console
-#
-from platform import python_version
-print("Python " + python_version())
-#
-#
-#
-#
-#	- Display curent time on console
-#
-import datetime
-print("Current date and time : ")
-print(datetime.datetime.now(), "\n")
-#
-#
-#
-#
-#	- Display curent time on console (formatted)
-#
-import datetime
-now = datetime.datetime.now()
-print("Current date and time : ")
-print(now.strftime("%Y-%m-%d %H:%M:%S"), "\n")
