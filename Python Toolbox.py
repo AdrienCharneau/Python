@@ -1,5 +1,7 @@
 #
 #
+#
+#
 #__VARIABLES_________________________________________________________
 #	
 #
@@ -11,6 +13,12 @@ false,finally, for, from, global, if, import, in, is, lambda, none,
 nonlocal, not, or, pass, raise, return, true, try, while, with, yield
 
 """
+#
+#
+#	- Booleans
+#
+variableBoolean_1 = True
+variableBoolean_2 = False
 #
 #
 #	- Nombres entiers et flottants
@@ -75,6 +83,97 @@ variableLigne = 1 + 4 - 3 * 19 + 33 - 45 * 2 + (8 - 3) \
 #
 #
 #__INSTRUCTIONS CONDITIONNELLES______________________________________
+#
+#
+"""
+	<	Strictement inférieur à
+
+	>	Strictement supérieur à
+
+	<=	Inférieur ou égal à
+
+	>=	Supérieur ou égal à
+
+	==	Égal à
+
+	!=	Différent de
+
+	is 
+
+	is not
+"""
+#
+#
+a = 5
+#
+if a > 0:
+	print("a est supérieur à 0.")
+
+#	Affiche "a est supérieur à 0" !!! Ne pas oublier d'utiliser une tabulation à l'intérieur du bloc et de sauter une ligne pour le fermer !!!
+#
+#
+a = 5
+b = 8
+#
+if a > 0:
+    b += 1
+    print("a = ",a,"et b = ",b)
+
+#	Affiche "a = 5 et b = 8"
+#
+#
+a = 5
+#
+if a > 0:
+	print("a est supérieur à 0.")
+else:
+	print("a est inférieur ou égal à 0.")
+
+#	Affiche "a est supérieur à 0."
+#
+#
+a = 5
+#
+if a > 0:
+	print("a est positif.")
+elif a < 0:
+	print("a est négatif.")
+else:
+	print("a est nul.")
+#
+#	Affiche "a est positif."
+#
+#
+a = 5
+#
+if a >= 2 and a <= 8:
+    print("a est dans l'intervalle.")
+else:
+    print("a n'est pas dans l'intervalle.")
+
+#	Affiche "a est dans l'intervalle."
+#
+#
+a = 5
+#
+if a < 2 or a > 8:
+    print("a n'est pas dans l'intervalle.")
+else:
+    print("a est dans l'intervalle.")
+
+#	Affiche "a est dans l'intervalle."
+#
+#
+variableBoolean = False
+#
+if variableBoolean is not True:
+	print("variableBoolean est False.")
+
+#	Affiche "variableBoolean est False."
+#
+#
+#
+#
 #
 #
 #
