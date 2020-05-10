@@ -9,7 +9,7 @@ if userInput.isnumeric() is not True:
 else:
 	userInput = int(userInput)
 #
-	if userInput % 4 == 0 and userInput % 100 == 0 and userInput % 400 == 0:
+	if (userInput % 4 == 0 and userInput % 100 != 0) or userInput % 400 == 0:
 		print("Ceci est bien une année bissextile")
 	else:
 		print("Ceci n'est pas une année bissextile")
