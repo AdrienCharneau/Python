@@ -242,6 +242,59 @@ for lettre in chaine:
 #__FONCTIONS_________________________________________________________
 #
 #
+def table(nb, max):
+#
+    i = 0
+#
+    while i < max:
+        print(i + 1, "*", nb, "=", (i + 1) * nb)
+        i += 1
+
+#
+#
+def table(nb, max=10):
+#
+    i = 0
+#
+    while i < max:
+        print(i + 1, "*", nb, "=", (i + 1) * nb)
+        i += 1
+
+#	Ici, si l'on décide de ne pas préciser le deuxième paramêtre lors de l'appel de la fonction, celui-ci sera égal à 0 par défaut
+#
+#
+#
+#
+def fonc(a=1, b=2, c=3, d=4, e=5):
+    print("a =", a, "b =", b, "c =", c, "d =", d, "e =", e)
+#
+fonc()
+#	Affiche "a = 1 b = 2 c = 3 d = 4 e = 5"
+#
+fonc(4)
+#	Affiche "a = 4 b = 2 c = 3 d = 4 e = 5"
+#
+fonc(3,5)
+#	Affiche "a = 3 b = 5 c = 3 d = 4 e = 5"
+#
+fonc(b=8, d=5)
+#	Affiche "a = 1 b = 8 c = 3 d = 5 e = 5"
+#
+fonc(b=35, c=48, a=4, e=9)
+#	Affiche "a = 4 b = 35 c = 48 d = 4 e = 9"
+#
+#
+#
+#
+def functionCarre(valeur):
+    return valeur * valeur
+
+print(functionCarre(5))
+#	Affiche "25"
+#
+#
+#
+#
 #	- Print
 #
 print("Hello World !")
@@ -286,3 +339,14 @@ print(type(3.4))
 #
 print(type("string"))
 #	Affiche "<class 'str'>"
+#
+#
+#
+#
+#	- Doctstring
+#
+def docstringFunction():
+    """Voici le docstring de la fonction"""
+ 
+help(docstringFunction)
+#	Affiche "Voici le docstring de la fonction" dans une interface ("q" pour quitter)
