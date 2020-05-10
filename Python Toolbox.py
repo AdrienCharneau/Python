@@ -295,6 +295,14 @@ print(functionCarre(5))
 #
 #
 #
+f = lambda x: x * x
+#
+print(f(4))
+#	Affiche "16"
+#
+#
+#
+#
 #	- Print
 #
 print("Hello World !")
@@ -350,3 +358,37 @@ def docstringFunction():
  
 help(docstringFunction)
 #	Affiche "Voici le docstring de la fonction" dans une interface ("q" pour quitter)
+#
+#
+#
+#
+#
+#
+#
+#
+#__MODULES___________________________________________________________
+#
+#
+import math
+print(math.sqrt(16))
+#	Affiche "4.0"
+#
+#
+import math
+help(math)
+#	Affiche la docstring du module "math" ("Entrée" pour avancer d'une ligne, "Espace" pour avancer d'une page et "q" pour quitter)
+#
+#
+import math as mathematiques
+print(mathematiques.sqrt(25))
+#	Affiche "5.0"
+#
+#
+from math import sqrt
+print(sqrt(16))
+#	Affiche "4.0"
+#
+#
+from math import *
+print(sqrt(4))
+#	Affiche "2.0"
