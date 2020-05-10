@@ -178,6 +178,67 @@ if variableBoolean is not True:
 #
 #
 #
+#__BOUCLES___________________________________________________________
+#
+#
+#	- While
+#
+i = 0
+#
+while i < 10:
+    print(i)
+    i += 1
+
+#
+#
+while 1: # 1 est toujours vrai -> boucle infinie
+    lettre = input("Tapez 'q' pour quitter : ")
+    if lettre == "q":
+        print("Fin de la boucle")
+        break
+
+#
+#
+i = 1
+#
+while i < 20: # Tant que i est inférieure à 20
+    if i % 3 == 0:
+        i += 4 # On ajoute 4 à i
+        print("On incrémente i de 4. i est maintenant égale à", i)
+        continue # On retourne au while sans exécuter les autres lignes
+    print("La variable i =", i)
+    i += 1 # Dans le cas classique on ajoute juste 1 à i
+
+#
+#
+#
+#
+#	- For
+#
+chaine = "Hello World !"
+#
+for lettre in chaine:
+    print(lettre)
+
+#
+#
+chaine = "Hello World !"
+#
+for lettre in chaine:
+    if lettre in "AEIOUYaeiouy":
+        print(lettre)
+    else:
+        print("*")
+
+#	Affiche les voyelles de la chaine de caractères "chaine"
+#
+#
+#
+#
+#
+#
+#
+#
 #__FONCTIONS_________________________________________________________
 #
 #

@@ -22,6 +22,10 @@ Affiche la version de Python installée. Fonctionne aussi avec "python2 -V", "py
 Démarre l'interpréteur Python. Fonctionne aussi avec "python2", "python3" ou encore "python3.8"
 
 
+- ./nomDuProgramme.py :
+Exécute le programme "nomDuProgramme.py". Ne pas oublier d'attribuer les droits d'éxecution ainsi que les en-têtes "#!/usr/bin/python3.8" et "# -*-coding:Utf-8 -*" au fichier.
+
+
 
 
 COMMANDES PYTHON_____________________________________________________
