@@ -404,3 +404,89 @@ if __name__ == "__main__":
 #	fichier appelé est le fichier exécuté. Autrement dit, si "__name__" vaut "__main__", vous pouvez mettre un code qui sera exécuté si 
 #	le fichier est lancé directement comme un exécutable (et non importé dans un autre fichier).
 #	=> Voir dossier "OpenClassrooms/exempleModules/"
+#
+#
+#
+#
+#
+#
+#
+#
+#__EXCEPTIONS & ASSERTIONS___________________________________________
+#
+#
+annee = input()
+#
+try:
+    annee = int(annee)
+except:
+    print("Erreur lors de la conversion de l'année.")
+#
+#
+#
+#
+try:
+    resultat = numerateur / denominateur
+except NameError:
+    print("La variable numerateur ou denominateur n'a pas été définie.")
+except TypeError:
+    print("La variable numerateur ou denominateur possède un type incompatible avec la division.")
+except ZeroDivisionError:
+    print("La variable denominateur est égale à 0.")
+#
+#
+#
+#
+try:
+    # Bloc de test
+except type_de_l_exception as exception_retournee:
+    print("Voici l'erreur :", exception_retournee)
+#
+#
+#
+#
+try:
+    resultat = numerateur / denominateur
+except NameError:
+    print("La variable numerateur ou denominateur n'a pas été définie.")
+except TypeError:
+    print("La variable numerateur ou denominateur possède un type incompatible avec la division.")
+except ZeroDivisionError:
+    print("La variable denominateur est égale à 0.")
+else:
+    print("Le résultat obtenu est", resultat)
+#
+#
+#
+#
+try:
+    # Test d'instruction(s)
+except type_de_l_exception:
+    # Traitement en cas d'erreur
+finally:
+    # Instruction(s) exécutée(s) qu'il y ait eu des erreurs ou non (même si on met un "return" dans l'une des exceptions)
+#
+#
+#
+#
+annee = input("Saisissez une année supérieure à 0 :")
+#
+try:
+    annee = int(annee)
+    assert annee > 0
+except ValueError:
+    print("Vous n'avez pas saisi un nombre.")
+except AssertionError:
+    print("L'année saisie est inférieure ou égale à 0.")
+#
+#
+#
+#
+annee = input()
+#
+try:
+    annee = int(annee)
+    if annee <= 0:
+        raise ValueError("l'année saisie est négative ou nulle")
+except ValueError:
+    print("La valeur saisie est invalide (l'année est peut-être négative).")

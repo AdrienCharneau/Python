@@ -4,11 +4,14 @@
 print("Indiquez une année:")
 userInput = input()
 #
-if userInput.isnumeric() is not True:
-	print("Ceci n'est pas une année")
-else:
+try:
 	userInput = int(userInput)
-#
+	assert userInput > 0
+except ValueError:
+	print("Ceci n'est pas une année")
+except AssertionError:
+	print("l'année doit être un nombre positif supèrieur à 0")
+else:
 	if (userInput % 4 == 0 and userInput % 100 != 0) or userInput % 400 == 0:
 		print("Ceci est bien une année bissextile")
 	else:
