@@ -355,6 +355,7 @@ print(type("string"))
 #
 def docstringFunction():
     """Voici le docstring de la fonction"""
+    print("Hello World !")
  
 help(docstringFunction)
 #	Affiche "Voici le docstring de la fonction" dans une interface ("q" pour quitter)
@@ -392,3 +393,14 @@ print(sqrt(16))
 from math import *
 print(sqrt(4))
 #	Affiche "2.0"
+#
+#
+#
+#
+if __name__ == "__main__":
+    print("Hello World !")
+
+#	La variable "__name__" est une variable qui existe dès le lancement de l'interpréteur. Si elle vaut "__main__", cela veut dire que le 
+#	fichier appelé est le fichier exécuté. Autrement dit, si "__name__" vaut "__main__", vous pouvez mettre un code qui sera exécuté si 
+#	le fichier est lancé directement comme un exécutable (et non importé dans un autre fichier).
+#	=> Voir dossier "OpenClassrooms/exempleModules/"
