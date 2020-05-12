@@ -149,6 +149,17 @@ variableLigne = 1 + 4 - 3 * 19 + 33 - 45 * 2 + (8 - 3) \
 #
 #
 #
+#	- Suppression
+#
+variable = 34
+#
+del variable
+print(variable)
+#	NameError: name 'variable' is not defined
+#
+#
+#
+#
 #
 #
 #
@@ -195,14 +206,69 @@ liste1 = [1, 5.5, 18]
 liste2 = liste1.append(-15)
 #
 print(liste1)
-#	Affiche [1, 5.5, 18, -15]
+#	Affiche "[1, 5.5, 18, -15]"
 #
 print(liste2)
 #	Affiche 'None'
-#	Il faut bien faire la différence entre les méthodes de chaînes, 
+#	!!! Il faut bien faire la différence entre les méthodes de chaînes, 
 #	où l'objet d'origine n'est jamais modifié et qui renvoient un 
 #	nouvel objet, et les méthodes de listes, qui ne renvoient rien 
-#	mais modifient l'objet d'origine.
+#	mais modifient l'objet d'origine. !!!
+#
+#
+ma_liste = ['a', 'b', 'd', 'e']
+ma_liste.insert(2, 'c')
+print(ma_liste)
+#	Affiche "['a', 'b', 'c', 'd', 'e']"
+#
+#
+#
+#
+#	- Concaténation
+#
+ma_liste1 = [3, 4, 5]
+ma_liste2 = [8, 9, 10]
+#
+ma_liste1.extend(ma_liste2)
+print(ma_liste1)
+#	Affiche "[3, 4, 5, 8, 9, 10]"
+#
+#
+ma_liste1 = [3, 4, 5]
+ma_liste2 = [8, 9, 10]
+#
+print(ma_liste1 + ma_liste2)
+#	Affiche "[3, 4, 5, 8, 9, 10]"
+#
+#
+ma_liste1 = [3, 4, 5]
+ma_liste2 = [8, 9, 10]
+#
+ma_liste1 += ma_liste2
+print(ma_liste1)
+#	Affiche "[3, 4, 5, 8, 9, 10]"
+#
+#
+#
+#
+#	- Suppression
+#
+ma_liste = [-5, -2, 1, 4, 7, 10]
+#
+del ma_liste[0]
+print(ma_liste)
+#	Affiche "[-2, 1, 4, 7, 10]"
+#
+del ma_liste[2]
+print(ma_liste)
+#	Affiche "[-2, 1, 7, 10]"
+#
+#
+ma_liste = [31, 32, 33, 34, 35]
+ma_liste.remove(32)
+print(ma_liste)
+#	Affiche "[31, 33, 34, 35]"
+#	!!! La méthode remove ne retire que la première occurrence de la valeur trouvée dans la liste !!!
 #
 #
 #
