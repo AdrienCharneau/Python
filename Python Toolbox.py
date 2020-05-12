@@ -153,6 +153,64 @@ variableLigne = 1 + 4 - 3 * 19 + 33 - 45 * 2 + (8 - 3) \
 #
 #
 #
+#__LISTES ET TUPLES__________________________________________________
+#
+#
+ma_liste = list()
+print(ma_liste)
+#	Affiche '[]'
+#
+ma_liste = []
+print(ma_liste)
+#	Affiche '[]'
+#
+ma_liste = [1, 2, 3, 4, 5]
+print(ma_liste)
+#	Affiche '[1, 2, 3, 4, 5]'
+#
+ma_liste = [1, 3.5, "une chaine", []]
+print(ma_liste)
+#	Affiche "[1, 3.5, 'une chaine', []]"
+#
+#
+ma_liste = ['c', 'f', 'm']
+#
+print(ma_liste[0])
+#	Affiche 'c'
+#
+print(ma_liste[2])
+#	Affiche 'm'
+#
+ma_liste[1] = 'Z'
+print(ma_liste)
+#	Affiche "['c', 'Z', 'm']"
+#
+ma_liste = [1, 2, 3]
+ma_liste.append(56)
+print(ma_liste)
+#	Affiche "[1, 2, 3, 56]"
+#
+#
+liste1 = [1, 5.5, 18]
+liste2 = liste1.append(-15)
+#
+print(liste1)
+#	Affiche [1, 5.5, 18, -15]
+#
+print(liste2)
+#	Affiche 'None'
+#	Il faut bien faire la différence entre les méthodes de chaînes, 
+#	où l'objet d'origine n'est jamais modifié et qui renvoient un 
+#	nouvel objet, et les méthodes de listes, qui ne renvoient rien 
+#	mais modifient l'objet d'origine.
+#
+#
+#
+#
+#
+#
+#
+#
 #__INSTRUCTIONS CONDITIONNELLES______________________________________
 #
 #
