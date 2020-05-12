@@ -565,6 +565,8 @@ def decomposer(entier, divise_par):
     rst = entier % divise_par
     return p_e, rst
 
+#	Cette fonction renvoie un tuple
+#
 partie_entiere, reste = decomposer(20, 3)
 #
 print(partie_entiere)
