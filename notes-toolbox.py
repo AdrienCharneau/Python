@@ -14,7 +14,7 @@
 """
 #
 #
-#   -Langage Interprete
+#   - Langage Interprete
 """
 
         Python est un langage de programmation interprété, c'est-à-dire que les instructions 
@@ -42,7 +42,7 @@
 """
 #
 #
-#   -Versions
+#   - Versions
 """
 
         Lors de la création de la Python Software Foundation, en 2001, et durant les années 
