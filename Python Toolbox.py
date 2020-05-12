@@ -183,6 +183,12 @@ ma_liste = [1, 3.5, "une chaine", []]
 print(ma_liste)
 #	Affiche "[1, 3.5, 'une chaine', []]"
 #
+ma_liste = [
+        [".", ".", ".", ".", "."],
+        ["O", "O", "O", "O", "O"],
+        [".", ".", ".", ".", "."],
+    ]
+#
 #
 ma_liste = ['c', 'f', 'm']
 #
@@ -269,6 +275,16 @@ ma_liste.remove(32)
 print(ma_liste)
 #	Affiche "[31, 33, 34, 35]"
 #	!!! La méthode remove ne retire que la première occurrence de la valeur trouvée dans la liste !!!
+#
+#
+#
+#
+#	- Tuples
+#
+tuple_vide = ()
+tuple_non_vide = (1,)
+tuple_non_vide = 1,
+tuple_avec_plusieurs_valeurs = (1, 2, 5)
 #
 #
 #
@@ -440,6 +456,50 @@ for lettre in chaine:
 #
 #
 #
+#	- Listes
+#
+ma_liste = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+i = 0
+#
+while i < len(ma_liste):
+	print(ma_liste[i])
+	i += 1
+
+#
+for element in ma_liste:
+	print(element)
+
+#
+for i, element in enumerate(ma_liste):
+	print("À l'indice {} se trouve {}.".format(i, element))
+
+#
+#
+for element in enumerate(ma_liste):
+	print(element)
+
+#	Affiche des tuples qui contiennent deux éléments: d'abord l'indice, puis l'objet se trouvant à cet indice (0, 'a') (1, 'b') ...
+#	Les tuples sont des séquences, assez semblables aux listes, sauf qu'on ne peut modifier un tuple après qu'il ait été créé. Cela 
+#	signifie qu'on définit le contenu d'un tuple (les objets qu'il doit contenir) lors de sa création, mais qu'on ne peut en ajouter 
+#	ou en retirer par la suite.
+#
+#
+#
+#
+autre_liste = [
+				[1, 'a'],
+				[4, 'd'],
+				[7, 'g'],
+				[26, 'z'],
+	]
+#
+for nb, lettre in autre_liste:
+	print("La lettre {} est la {}e de l'alphabet.".format(lettre, nb))
+
+#
+#
+#
+#
 #
 #
 #
@@ -496,6 +556,22 @@ def functionCarre(valeur):
 
 print(functionCarre(5))
 #	Affiche "25"
+#
+#
+#
+#
+def decomposer(entier, divise_par):
+    p_e = entier // divise_par
+    rst = entier % divise_par
+    return p_e, rst
+
+partie_entiere, reste = decomposer(20, 3)
+#
+print(partie_entiere)
+#	Affiche '6'
+#
+print(reste)
+#	Affiche '2'
 #
 #
 #
