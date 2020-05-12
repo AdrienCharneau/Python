@@ -23,19 +23,90 @@ variableBoolean_2 = False
 #
 #	- Nombres entiers et flottants
 #
+variableEntier = int()
 variableEntier = 1
 variableFloat = 1.25
 #
 #
 #	- Chaîne de caractères
 #
+variableString = str()
 variableString_1 = '''Exemple de chaîne'''
 variableString_2 = """Exemple de chaîne"""
 variableString_3 = 'Exemple de chaîne avec \''
 variableString_4 = "Exemple de chaîne avec \""
-
+#
 varibaleString_5 = """Exemple de chaîne
 					avec tab et saut à la ligne"""
+#
+#
+prenom = "Paul"
+nom = "Dupont"
+age = 21
+#
+print("Je m'appelle {0} {1} et j'ai {2} ans.".format(prenom, nom, age))
+#	Affiche "Je m'appelle Paul Dupont et j'ai 21 ans."
+#
+varibaleString_6 = "Je m'appelle {0} {1} et j'ai {2} ans.".format(prenom, nom, age)
+#	"varibaleString_6" contient "Je m'appelle Paul Dupont et j'ai 21 ans."
+#
+#
+date = "Dimanche 24 juillet 2011"
+heure = "17:00"
+#
+print("Cela s'est produit le {}, à {}.".format(date, heure))
+#	Affiche "Cela s'est produit le Dimanche 24 juillet 2011, à 17:00."
+#
+#
+adresse = "{no_rue}, {nom_rue} {code_postal} {nom_ville} ({pays})".format(no_rue = 5, nom_rue = "rue des Postes", code_postal = 75003, nom_ville = "Paris", pays = "France")
+print(adresse)
+#	Affiche "5, rue des Postes 75003 Paris (France)"
+#
+#
+prenom = "Paul"
+message = "Bonjour"
+print(message + " " + prenom)
+#	Affiche "Bonjour Paul"
+#
+#
+age = 21
+message = "J'ai " + str(age) + " ans."
+print(message)
+#	Affiche "J'ai 21 ans."
+#
+#
+chaine = "Hello World !"
+#
+print(chaine[0])
+#	Affiche 'H'
+#
+print(chaine[2])
+#	Affiche 'l'
+#
+print(chaine[-1])
+#	Affiche '!'
+#
+#
+chaine = "Salut"
+print(len(chaine))
+#	Taille de la chaine. Affiche '5'
+#
+#
+presentation = "salut"
+#
+print(presentation[0:2])
+#	Affiche 'sa'
+#
+print(presentation[2:len(presentation)])
+#	Affiche 'lut'
+#
+print(presentation[:2])
+#	Affiche 'sa'
+#
+print(presentation[2:])
+#	Affiche 'lut'
+#
+#
 #
 #
 #	- Caractères spéciaux
@@ -211,6 +282,16 @@ while i < 20: # Tant que i est inférieure à 20
 
 #
 #
+chaine = "Salut"
+i = 0
+#
+while i < len(chaine):
+    print(chaine[i])
+    i += 1
+
+#	Attention! Il est impossible de changer les lettres de la chaîne en utilisant les indices (TypeError: 'str' object does not support item assignment)
+#
+#
 #
 #
 #	- For
@@ -359,6 +440,33 @@ def docstringFunction():
  
 help(docstringFunction)
 #	Affiche "Voici le docstring de la fonction" dans une interface ("q" pour quitter)
+#
+#
+#
+#
+#	- Str
+#
+chaine = "CHAINE"
+print(chaine.lower())
+#
+#
+chaine = str()
+#
+while chaine.lower() != "q":
+    print("Tapez 'Q' pour quitter...")
+    chaine = input()
+#
+#
+minuscules = "une chaine en minuscules"
+#
+minuscules.upper()									# Mettre en majuscules
+minuscules.capitalize()								# La première lettre en majuscule
+#
+espaces = "   une  chaine avec  des espaces   "
+espaces.strip()										# On retire les espaces au début et à la fin de la chaîne
+#
+titre = "introduction"
+titre.upper().center(20)							#'    INTRODUCTION    '
 #
 #
 #

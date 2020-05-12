@@ -13,7 +13,7 @@ while gameOver is not True:
     print("""Combien souaitez-vous miser? (tapez 'quitter' pour sortir)""")
     userInput = input()
     #
-    if userInput == "quitter":
+    if userInput.lower() == "quitter":
         gameOver = True
         continue
     #
@@ -28,7 +28,7 @@ while gameOver is not True:
     else:
         credits -= stake
         numberSelection = False
-        selectedNumber = 0
+        selectedNumber = int()
         #
         while numberSelection is not True:
             print("Choisissez un nombre entre 0 et 49")
