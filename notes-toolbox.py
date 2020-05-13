@@ -696,6 +696,39 @@ print(reste)
 #
 #
 #
+#   - Paramêtres multiples
+#
+def fonction_inconnue(*parametres):
+    print("J'ai reçu : {}.".format(parametres))
+
+#
+fonction_inconnue()
+#   Affiche "J'ai reçu : ()."
+#
+fonction_inconnue(33)
+#   Affiche "J'ai reçu : (33,)."
+#
+fonction_inconnue('a', 'e', 'f')
+#   Affiche "J'ai reçu : ('a', 'e', 'f')."
+#
+var = 3.5
+fonction_inconnue(var, [4], "...")
+#   Affiche "J'ai reçu : (3.5, [4], '...')."
+#
+#   Le fait de préciser une étoile * devant le nom du paramètre fait 
+#   que Python va placer tous les paramètres de la fonction dans un 
+#   tuple, que l'on peut ensuite traiter comme on le souhaite.
+#
+#   Si on définit une liste variable de paramètres, elle doit se trouver 
+#   après la liste des paramètres standard. En revanche, si l'on 
+#   souhaite avoir des paramètres nommés, il faut les mettre après 
+#   cette liste. 
+#
+#
+#
+#
+#   - Fonction Lambda
+#
 f = lambda x: x * x
 #
 print(f(4))
@@ -787,6 +820,16 @@ espaces.strip()										# On retire les espaces au début et à la fin de la ch
 #
 titre = "introduction"
 titre.upper().center(20)							#'    INTRODUCTION    '
+#
+#
+ma_chaine = "Bonjour à tous"
+print(ma_chaine.split(" "))
+#   Affiche '['Bonjour', 'à', 'tous']'
+#
+#
+ma_liste = ['Bonjour', 'à', 'tous']
+print(" ".join(ma_liste))
+#   Affiche 'Bonjour à tous'
 #
 #
 #
