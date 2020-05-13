@@ -308,6 +308,11 @@ ma_liste = [
     ]
 #
 #
+liste_des_parametres = [1, 4, 9, 16, 25, 36]
+print(*liste_des_parametres)
+#   Affiche "1 4 9 16 25 36"
+#
+#
 ma_liste = ['c', 'f', 'm']
 #
 print(ma_liste[0])
@@ -344,6 +349,22 @@ ma_liste = ['a', 'b', 'd', 'e']
 ma_liste.insert(2, 'c')
 print(ma_liste)
 #	Affiche "['a', 'b', 'c', 'd', 'e']"
+#
+#
+liste_origine = [0, 1, 2, 3, 4, 5]
+print([nb * nb for nb in liste_origine])
+#   Affiche "[0, 1, 4, 9, 16, 25]"
+#
+liste_origine = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print([nb for nb in liste_origine if nb % 2 == 0])
+#   Affiche "[2, 4, 6, 8, 10]"
+#
+#
+qtt_a_retirer = 7
+fruits_stockes = [15, 3, 18, 21]
+#
+print([nb_fruits - qtt_a_retirer for nb_fruits in fruits_stockes if nb_fruits > qtt_a_retirer])
+#   Affiche "[8, 11, 14]"
 #
 #
 #
@@ -403,6 +424,11 @@ tuple_vide = ()
 tuple_non_vide = (1,)
 tuple_non_vide = 1,
 tuple_avec_plusieurs_valeurs = (1, 2, 5)
+#
+varTuple = ("a", "b", "c", "d", "e")
+varList = list(varTuple)
+print(varList)
+#   Affiche "['a', 'b', 'c', 'd', 'e']"
 #
 #
 #
@@ -697,6 +723,15 @@ print(reste)
 #
 #
 #   - Paramêtres multiples
+#
+def param_multiples(*parametres):
+    parametres = list(parametres)
+    return parametres
+
+#
+print(param_multiples("f", "b", 45))
+#   Affiche "['f', 'b', 45]"
+#
 #
 def fonction_inconnue(*parametres):
     print("J'ai reçu : {}.".format(parametres))
