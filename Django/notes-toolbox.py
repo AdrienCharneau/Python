@@ -59,3 +59,37 @@
 		https://djangosnippets.org/
 
 """
+#
+#
+#
+#
+#
+#
+#
+#
+#__INSTALLATION______________________________________________________
+#
+#
+#	- PIP
+#
+#		sudo apt-get install python3-pip
+#		pip3 install Django==3.0
+#		pip3 install Django --upgrade
+#
+#
+#	- Test
+#		
+#!/usr/bin/python3
+# -*-coding:Utf-8 -*
+#
+import django
+print(django.get_version())
+#	Affiche '3.0' ou autre version
+#
+#
+#
+#
+#
+#
+#
+#
