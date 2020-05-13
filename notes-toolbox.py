@@ -358,6 +358,7 @@ print([nb * nb for nb in liste_origine])
 liste_origine = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print([nb for nb in liste_origine if nb % 2 == 0])
 #   Affiche "[2, 4, 6, 8, 10]"
+#   Syntaxe: nouvelle_squence = ['manipulationElement' for 'element' in 'ancienne_squence' if 'condition']
 #
 #
 qtt_a_retirer = 7

@@ -25,6 +25,7 @@ inventaireList.sort(reverse=True)
 #
 #   - CORRECTION:
 #
+print(inventaire)
 inventaire_inverse = [(qtt, nom_fruit) for nom_fruit, qtt in inventaire]
 inventaire = [(nom_fruit, qtt) for qtt, nom_fruit in sorted(inventaire_inverse, reverse=True)]
 print(inventaire)
