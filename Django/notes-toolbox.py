@@ -116,7 +116,7 @@
 #		Django gère lui-même la partie contrôleur (gestion des 
 #		requêtes du client, des droits sur les actions…). Ainsi, nous 
 #		parlons plutôt de framework utilisant l’architecture MVT : 
-#		Modèle-Vue-Template.
+#		Modèle-Vue-Template. (Pas fini voir OpenClassrooms)
 #
 #
 #
@@ -174,7 +174,8 @@
 #
 #	- python3 manage.py startapp blog :
 #	Création d'une nouvelle application de type blog (le faire à la 
-#	racine du projet?).
+#	racine du projet?). Ne pas oublier de modifier la section 
+#	'INSTALLED_APPS' dans 'settings.py'
 #
 #
 #
@@ -214,6 +215,22 @@ ALLOWED_HOSTS = []
 #	Cette variable permet de renseigner les noms de domaine et 
 #	adresses IP par lesquels le projet est accessible lorsque le mode 
 #	DEBUG est désactivé.
+#
+#
+#
+#
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+#
+#	Liste toutes les applications qui ont été ajoutées au projet. Ne 
+#	pas oublier de modifier cette partie à chaque fois qu'on en 
+#	installe une nouvelle.
 #
 #
 #
@@ -291,3 +308,8 @@ DATABASES = {
 #	- views.py
 #
 #		Contient les vues.
+#
+#
+#	- migrations
+#
+#		(A remplir)
