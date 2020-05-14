@@ -128,25 +128,32 @@
 #
 #	- PIP
 #
-#		sudo apt-get install python3-pip
-#		pip3 install Django==3.0
-#		pip3 install Django --upgrade
+#		- sudo apt-get install python3-pip :
+#		Installation de pip
+#
+#		- pip3 install Django==2.0 :
+#		Installation de Django (version 2.0)
 #
 #
-#	- Test
-#		
-		#!/usr/bin/python3
-		# -*-coding:Utf-8 -*
+#	- Initialisation & Démarrage
 #
-		import django
-		print(django.get_version())
-		#	Affiche '3.0' ou autre version
+#		- python3 -m django startproject nom_du_projet :
+#		Initialisation d'un nouveau projet "nom_du_projet" dans le dossier courant
+#
+#		- python3 manage.py runserver :
+#		Démarre le projet (si l'on se trouve à sa racine). Accessible à l'adresse 'http://localhost:8000'
 #
 #
-#	- Initialisation
+#	- Autres Commandes
 #
-#		cd /home/user/Projets/
-#		python3 -m django startproject nom_du_projet
+#		- sudo apt remove python3-pip :
+#		Désinstallation de pip
+#
+#		- pip3 install Django --upgrade :
+#		Mise à jour de django
+#
+#		- sudo pip3 uninstall django :
+#		Désinstallation de django
 #
 #
 #
