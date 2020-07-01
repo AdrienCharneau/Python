@@ -175,7 +175,7 @@
 #	- python3 manage.py startapp blog :
 #	Création d'une nouvelle application de type blog (le faire à la 
 #	racine du projet?). Ne pas oublier de modifier la section 
-#	'INSTALLED_APPS' dans 'settings.py'
+#	'INSTALLED_APPS' dans le fichier 'settings.py'
 #
 #
 #
