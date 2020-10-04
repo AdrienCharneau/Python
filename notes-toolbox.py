@@ -475,7 +475,7 @@ if a > 0:
     b += 1
     print("a = ",a,"et b = ",b)
 
-#	Affiche "a = 5 et b = 8"
+#	Affiche "a = 5 et b = 9"
 #
 #
 a = 5
